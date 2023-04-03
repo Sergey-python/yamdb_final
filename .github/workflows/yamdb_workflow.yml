@@ -67,11 +67,11 @@ jobs:
           # Выполняет pull образа с DockerHub
           sudo docker pull pythonmann/api_yamdb
           # Пересобирает и запускает контейнеры
-          docker-compose up --build
+          sudo docker-compose up --build
           # Выполняет миграции
-          docker-compose exec web python manage.py migrate
+          sudo docker-compose exec web python manage.py migrate
           # Собирает статику
-          docker-compose exec web python manage.py collectstatic --no-input
+          sudo docker-compose exec web python manage.py collectstatic --no-input
 
   send_message:
     runs-on: ubuntu-latest
