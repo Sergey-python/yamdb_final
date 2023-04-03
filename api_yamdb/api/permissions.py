@@ -12,7 +12,6 @@ class IsAdminUser(IsAuthenticated):
     """
 
     def has_permission(self, request, view):
-
         return super().has_permission(request, view) and (
             request.user.role == User.ADMIN or request.user.is_superuser
         )
