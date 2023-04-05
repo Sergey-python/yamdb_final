@@ -15,11 +15,11 @@ Python 3.8, Django 2.2, DRF, JWT
 - Клонировать репозиторий и перейти в директорию для развертывания:
 
 ```
-git clone git@github.com:Sergey-python/infra_sp2.git
+git clone git@github.com:Sergey-python/yamdb_final.git
 ```
 
 ```
-cd infra_sp2/infra/
+cd yamdb_final/infra/
 ```
 
 - Переменные окружения, используемые в проекте(для этого заполните файл .env):
@@ -45,3 +45,6 @@ docker-compose up
 
 ### Примеры запросов к API
 Примеры запросов доступны в документации по адресу http://127.0.0.1/redoc/ после запуска проекта.
+
+### Проект развернут в облаке
+Так же список доступных запросов можно посмотреть по адресу http://51.250.66.79/redoc/
